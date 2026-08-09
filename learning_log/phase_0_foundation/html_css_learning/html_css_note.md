@@ -1,12 +1,11 @@
 # HTML and CSS
 -[X] semantic structure\
 -[] flexbox and grid\
--[] Positioning\
 -[] Responsive Design\
 -[] Typography and visual hierarchy
 
 
-## Day1- Semantic structure
+## 1. Semantic structure
 **It is used to describe its meaning to both browser and developers**
 
 ![Semantic tags](../assets/semantic_tags.png)
@@ -88,7 +87,7 @@ Further information of other tags are described in the image below:
 - improve accessibility
 - Make browser easy to understand
 
-Resources used:\
+## Resources used
 Video:\
 codeWithHarry - [
 Semantic Tags in HTML, Sigma Web Development Course](https://www.youtube.com/watch?v=fhoDRB53DwY)
@@ -96,3 +95,78 @@ Semantic Tags in HTML, Sigma Web Development Course](https://www.youtube.com/wat
 Documentation:\
 w3school-
 [semantic elements in HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
+
+## 2. Flexbox and grid
+
+### a. Flexbox layout
+**It is a css layout model that allows you to arrange the items within the container in a flexible and responsive way.**
+
+#### Why flexbox?
+-Simple alignment\
+-Adaptive spacing (expand,shrink,wrap within available space)\
+-Component friendly (build navbars, cards, forms etc.)
+
+**a. Creating a flex container**
+
+Enable flexbox by setting:
+```
+display: flex;
+```
+*By default left to right*
+
+To chnage the direction:
+```
+flex-direction: column;
+```
+Justifying the content:
+horizontally:
+```
+justify-content: center;
+```
+
+vertically
+```
+align-items: center;
+```
+![flexbox flow](../assets/flex_box.jpeg)
+
+![axis](../assets/axis.png)
+
+**b. Flex wrap**\
+problems like overflowing and too much content, flex wrap can solve this.
+
+```
+flex-wrap: wrap;
+```
+aligining Multiple lined items:
+```
+align-content: center;
+```
+If we want gap between items:
+```
+gap: 2px;
+row-gap: 2px;
+column-gap: 3px;
+```
+**c. Flex-flow**
+```
+flex-flow: row wrap;
+```
+**Item properties:**\
+**a. Order**
+```
+order: 1;
+```
+
+**b. flex-grow and shrink**
+Grow the item accordingly
+
+```
+flex-grow: 2;
+```
+Now the item wil take or will grow up to 2 item, or expand  up to 2 item.
+
+## Resources used
+Video:\
+codeWithHarry - [
+CSS flexbox, Sigma Web Development Course](https://www.youtube.com/watch?v=DWk2mndNTHY&t=57s)
